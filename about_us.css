@@ -1,0 +1,445 @@
+html{
+    -ms-text-size-adjust: 100%;
+    -webkit-size-adjust: 100%;
+}
+body{
+    
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+.Logo{
+    height: 70px;
+}
+.Top_text{
+    text-align: center;
+    font-family: 'Trebuchet MS',Tahoma,Verdana,sans-serif;
+}
+.header{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr ;
+    
+    top: 0;
+    width: 100%;
+    
+    position: fixed;
+    z-index: 100;
+    
+    align-items: center;
+    background-color: #F76900;
+    padding-left: 50px;
+  }
+.dropbtn {
+    background-color: #F76900;
+    color: white;
+    padding: 20px;
+    margin-top: 10px;
+    display: none;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #ff892e;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    object-fit: cover;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    list-style: none;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;
+}
+
+@media screen and (max-width: 1411px) {
+    .vn_btn{
+        display: none;
+    }
+    .dropbtn{
+        display: inline-block ;
+    }  
+}
+.Top_page{
+    display: inline-block;
+    text-align: left;
+    margin-left: 30px;
+    padding-right:20px;
+    font-family: Sherman ;
+    color: white;
+    font-weight: 2;
+}
+.btn{
+    background: none;
+    border-radius: 0;
+    display: inline-block;
+    padding: 40px 5px;
+    width: 140px;
+    
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+
+    font-size: 16px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+    cursor: pointer;
+    border: none;
+    transition: .3s;
+    overflow: hidden;
+    position:relative;
+}
+.btn:hover{
+    color: #F76900;
+    background-color: white;
+    border-color: white;
+    text-decoration: underline;
+}
+.body{
+    font: 15px/30px opensans-regular, sans-serif;
+    
+    display: block;
+    margin-top: 140px;
+    place-items:center;
+    justify-content:center;
+    text-align: center;
+    
+    width: 100%;
+
+    
+}
+.title{
+    color: #F76900;
+    font-size: 25px;
+    width: 50%;
+    display: block;
+    margin:0 auto;
+    text-align: left;
+    line-height: 1.0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.desc{
+    display: block;
+    width: 50%;
+    line-height: 1.6;
+    margin:0 auto;
+    text-align: left;
+    font-family: ShermanSerif,Georgia,serif;
+    color: #001580;
+    font-size: 1.5rem;
+    
+}
+.exp{
+    color:#ff892e;
+    text-align: center;
+
+    padding-top: 40px;
+}
+.descrip{
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: ShermanSans,"Trebuchet MS",Tahoma,Verdana,sans-serif;
+    color: #000e54;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    line-height: 1.5;
+
+
+}
+.subtitle{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.column_F{
+    float: left;
+    width:40%;
+    text-align: center;
+
+    font-family: ShermanSans,"Trebuchet MS",Tahoma,Verdana,sans-serif;
+    color: #000e54;
+    font-size: 2rem;
+    font-weight: lighter;
+    text-decoration: underline;
+}
+.blank{
+    color: white;
+}
+.column_S{
+    float: left;
+    width:60%;
+    text-align: center;
+
+    font-family: ShermanSans,"Trebuchet MS",Tahoma,Verdana,sans-serif;
+    color: #000e54;
+    font-size: 2rem;
+    font-weight: lighter;
+    text-decoration: underline;
+}
+/* Start Of  Table displaying Faculty and Staff*/
+.faculty_students{
+    display: grid;
+    grid-column: 40% 30% 30%;
+    grid-template-areas: 
+    "faculty1 student1 student2"
+    "faculty2 student3 student4"
+    "faculty3 student5 student6"
+    "faculty4 student7 student8"
+    "faculty5 student9 student10"
+	"faculty6 student11 student12"
+	"faculty7 student13 student14";
+    margin: 40px ;
+    grid-gap: 30px;
+    margin-bottom: 50px;   
+    
+}
+.faculty1{
+    grid-area: faculty1;
+}
+.faculty2{
+    grid-area: faculty2;
+}
+.faculty3{
+    grid-area: faculty3;
+}
+.faculty4{
+    grid-area: faculty4;
+}
+.faculty5{
+    grid-area: faculty5;
+}
+.student1{
+    grid-area: student1;
+}
+.student2{
+    grid-area: student2;
+}
+.student3{
+    grid-area: student3;
+}
+.student4{
+    grid-area: student4;
+}.student5{
+    grid-area: student5;
+}.student6{
+    grid-area: student6;
+}
+.student7{
+    grid-area: student7;
+}
+.student8{
+    grid-area: student8;
+}
+.student9{
+    grid-area: student9;
+}
+.student10{
+    grid-area: student10;
+}
+.student11{
+    grid-area: student11;
+}
+.student12{
+    grid-area: student12;
+}
+.student13{
+    grid-area: student13;
+}
+.student14{
+    grid-area: student14;
+}
+.info{
+    padding-left: 15px ;
+    float: left;
+    line-height: 1.5;
+}
+.img{
+    float: left;
+    padding-top: 10px;
+    border-radius: 30px;
+    object-fit: cover;
+    
+
+    opacity: 1;
+    filter: grayscale(0%);
+}
+.profession{
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.name{
+    font-family:  ShermanSerif,Georgia,serif;
+}
+/*End Of Table showing Faculty and Staff*/
+.end_text{
+    text-align: center;
+    font-family: ShermanSans,"Trebuchet MS",Tahoma,Verdana,sans-serif;
+    color: rgb(204, 204, 204);
+}
+.end_page{
+    display: block;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    margin-top: 80px;
+    background-color: rgb(33,24,97);
+}
+.recruitment{
+    display: flex;
+}
+.row{
+    display:flex;
+    flex-wrap: wrap;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    
+    padding-top: 65px;
+    padding-bottom: 65px;
+    width: 50%;
+    background-color: rgb(33,24,97);
+  }
+  .item{
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding-left: 60px;
+    
+  }
+  .button_item{
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+  }
+  .app_btn{
+      background:none;
+      color: #F76900;
+      
+      border-color: #F76900;
+      border-width: 5px;
+      border-radius: 2px;
+      border-style: solid;
+      padding:18px 48px;
+      cursor: pointer;
+
+      font-size: 34px;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      transition: .5s;
+  }
+  .app_btn:hover{
+      background-color: white;
+      opacity: .8;
+      
+  }
+@media (max-width: 900px){
+    .Top_page{
+      font-size: 20px;
+    }
+    .Logo{
+      height: 45px;
+      width: 100px;
+    }
+    .image{
+      margin-top: 70px;
+    }
+    .text{
+      font-size: 20px;
+    }
+    .dropdown-content{
+      margin-left:-310%;
+    }
+    .header{
+      padding-left: 5%;
+    }
+    .header1{
+        display: block;
+    }
+    .desc{
+        top: 0;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+        
+    }
+    .faculty1{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #grid_object{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .faculty_students{
+        display: grid;
+        grid-column: 50% 50%;
+        grid-template-areas: 
+        "faculty1 faculty2"
+        "faculty3 faculty4"
+        "Student1 Student2"
+        "Student3 Student4"
+        "Student5 Student6"
+        "Student7 Student8"
+		"Student9 Student10"
+		"Student11 Student12"
+		"Student13 Student14";
+        
+        grid-gap: 30px;
+        margin-bottom: 50px;  
+    }
+    .img_container{
+        display: flex;
+        height: 100px;
+        width: 100%;
+        justify-content: center;
+    }
+    .img{
+        height: 100px;
+        width: 100px;
+        border-radius: 25px;
+        padding: 0;
+    }
+    .info{
+        padding: 0;
+        float: none;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+
+    }
+  }
+
+
